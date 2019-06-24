@@ -15,7 +15,7 @@
   "license": "GNU General Public License v2 or later",
   "licenseUri": "http://www.gnu.org/licenses/gpl-2.0.html",
   "tags": "container,wrapper,block,div,gutenberg,bootstrap",
-  "donateLink": "https://github.com/jhotadhari/donate",
+  "donateLink": "https://github.com/jhotadhari",
   "repositoryUri": "https://github.com/jhotadhari/div-block",
   "wpVersionTested": "5.2.0",
   "wpRequiresAtLeast": "5.0.0",
@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "grunt": "^1.0.3",
+    "object-extender": "^2.0.4",
     "wp-dev-env-grunt": "git+https://github.com/croox/wp-dev-env-grunt.git#0.8.0"
   },
   "browserify-shim": {
