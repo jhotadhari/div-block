@@ -1,0 +1,39 @@
+{
+  "name": "div-block",
+  "displayName": "Div Block",
+  "funcPrefix": "divb",
+  "uri": "https://github.com/jhotadhari/div-block",
+  "textDomain": "divb",
+  "domainPath": "/languages",
+  "version": "0.0.0",
+  "description": "Just a simple div Block. Nothing else.",
+  "main": "index.js",
+  "author": "jhotadhari",
+  "authorUri": "https://github.com/jhotadhari",
+  "projectType": "plugin",
+  "contributors": "jhotadhari",
+  "license": "GNU General Public License v2 or later",
+  "licenseUri": "http://www.gnu.org/licenses/gpl-2.0.html",
+  "tags": "container,wrapper,block,div,gutenberg,bootstrap",
+  "donateLink": "https://github.com/jhotadhari/donate",
+  "repositoryUri": "https://github.com/jhotadhari/div-block",
+  "wpVersionTested": "5.2.0",
+  "wpRequiresAtLeast": "5.0.0",
+  "phpRequiresAtLeast": "7.0.0",
+  "generator": {
+    "version": "0.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "wp-dev-env-grunt": "git+https://github.com/croox/wp-dev-env-grunt.git#0.8.0"
+  },
+  "browserify-shim": {
+    "jquery": "global:jQuery",
+    "react": "global:React",
+    "react-dom": "global:ReactDOM",
+    "lodash": "global:lodash"
+  }
+}
