@@ -1,8 +1,3 @@
 {
-  "changes": [
-    {
-      "type": "changed",
-      "message": "Adjust editor appearance to render bootstraps `.row` and `.col` classes better"
-    }
-  ]
+  "changes": []
 }
