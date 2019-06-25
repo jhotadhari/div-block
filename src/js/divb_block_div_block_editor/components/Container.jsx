@@ -11,10 +11,6 @@ const {
 	InnerBlocks,
 } = wp.editor;
 
-/**
- * Internal dependencies
- */
-
 class Container extends Component {
 
 	constructor( props ) {
@@ -28,9 +24,18 @@ class Container extends Component {
 			setAttributes,
 		} = this.props;
 
+		const classNameEditor = className.split( ' ' )
+			// remove classNames starts with col*
+			.filter( _className => ! [
+				'col',
+			].map( _start => _className.startsWith( _start ) ).includes( true ) )
+			// rename `row` to `divb-row`
+			.map( _className => 'row' === _className ? 'divb-row' : _className )
+			.join( ' ' );
+
 		return <>
 			<div
-				className={ className }
+				className={ setAttributes ? classNameEditor : 'divb ' + className }
 				style={ setAttributes && {
 					border: '1px dotted rgba( 0, 0, 0, 0.2)',
 				} }

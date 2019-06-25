@@ -1,0 +1,45 @@
+
+// kind of bootstrap row
+%row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.divb-row {
+    > .block-editor-inner-blocks > .block-editor-block-list__layout {
+        @extend %row;
+
+        // move the block appender to next row
+        > div:not(.wp-block),
+        > .wp-block[data-type="core/paragraph"] {
+            flex-basis: 100%;
+        }
+
+        > .block-editor-block-list__block {
+
+            padding-right: 30px;
+            padding-left: 30px;
+
+            > .block-editor-block-list__block-edit {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
+    }
+}
+
+.divb-toolbar {
+    &-text {
+        .components-base-control__field {
+            margin: 0;
+            input {
+                border: none;
+                border-radius: 0;
+            }
+        }
+    }
+}
