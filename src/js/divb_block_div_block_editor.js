@@ -1,23 +1,35 @@
 /**
  * External dependencies
  */
-import extender from 'object-extender';
+const {
+	get,
+} = lodash;
 
 /**
  * WordPress dependencies
  */
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
+const { createHigherOrderComponent } = wp.compose;
+const { addFilter } = wp.hooks;
+const { BlockControls } = wp.editor;
+const {
+	TextControl,
+	Toolbar,
+	Tooltip,
+} = wp.components;
 
 /**
  * Internal dependencies
  */
-import getDefault 				from './divb_block_div_block_editor/getDefault';
-import parseSerialized			from './divb_block_div_block_editor/parseSerialized';
-import Container				from './divb_block_div_block_editor/components/Container.jsx';
+import Container from './divb_block_div_block_editor/components/Container.jsx';
 
+// That's how wp isFinite naming this block
 const blockClassName = 'wp-block-divb-div-block';
 
+/**
+ * Register Block
+ */
 registerBlockType( 'divb/div-block', {
 	title: __( 'Div Block', 'divb' ),
 
@@ -31,18 +43,9 @@ registerBlockType( 'divb/div-block', {
 		html: true,
 	},
 
-    attributes: {
-		settings: {
-			type: 'string',
-			default:  JSON.stringify( getDefault( 'settings', {} ) ),
-		},
-    },
+    attributes: {},
 
     edit( { className, attributes, setAttributes } ) {
-
-    	const {
-    		align,
-    	} = attributes;
 
     	const classNameSorted = className.split( ' ' ).sort( ( a, b ) => {
 			if ( blockClassName === a ) return 1;
@@ -50,12 +53,22 @@ registerBlockType( 'divb/div-block', {
 			return 0;
     	} ).join( ' ' );
 
-    	const settings = extender.merge( getDefault( 'settings', {} ), parseSerialized( attributes.settings ) );
-
         return <>
 
+			<BlockControls>
+				<Toolbar className={ 'divb-toolbar-text' }>
+					<Tooltip text={ 'Additional CSS Class' }>
+						<div>
+							<TextControl
+								value={ attributes.className }
+								onChange={ ( className ) => setAttributes( { className } ) }
+							/>
+						</div>
+					</Tooltip>
+				</Toolbar>
+			</BlockControls>
+
 			<Container
-				settings={ settings }
 				className={ classNameSorted }
 				setAttributes={ setAttributes }
 			/>
@@ -68,8 +81,6 @@ registerBlockType( 'divb/div-block', {
     	const {
     		className,
     	} = attributes;
-
-    	const settings = extender.merge( getDefault( 'settings', {} ), parseSerialized( attributes.settings ) );
 
     	const classNameSorted = [
     		className,
@@ -85,29 +96,26 @@ registerBlockType( 'divb/div-block', {
 
 });
 
+/**
+ * Assign block `.col*` classNames to the editor block wrapper div
+ */
+const withColClassNames = createHigherOrderComponent( ( BlockListBlock ) => {
+    return ( props ) => {
 
+    	const colClassNames = get( props, ['attributes','className'], '' )
+    		.split( ' ' )
+    		// filter col*
+			.filter( _className => [
+				'col',
+			].map( _start => _className.startsWith( _start ) ).includes( true ) )
+			.join( ' ' );
 
+		if ( colClassNames.length ) {
+			return <BlockListBlock { ...props } className={ colClassNames } />;
+        } else {
+            return <BlockListBlock {...props} />
+        }
 
-
-
-// const { createHigherOrderComponent } = wp.compose;
-
-// const withCustomClassName = createHigherOrderComponent( ( BlockListBlock ) => {
-//     return ( props ) => {
-
-
-//     	// console.log( 'debug props', props );		// ??? debug
-
-
-// 		if ( props.attributes.className &&
-// 			props.attributes.className.split().some( _className => ['row','col'].includes( _className ) )
-// 		) {
-// 			return <BlockListBlock { ...props } className={ props.attributes.className } />;
-//         } else {
-//             return <BlockListBlock {...props} />
-//         }
-
-//     };
-// }, 'withClientIdClassName' );
-
-// wp.hooks.addFilter( 'editor.BlockListBlock', 'my-plugin/with-client-id-class-name', withCustomClassName )
+    };
+}, 'withClientIdClassName' );
+addFilter( 'editor.BlockListBlock', 'divb.editor.BlockListBlock', withColClassNames )
