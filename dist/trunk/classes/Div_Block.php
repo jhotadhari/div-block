@@ -97,12 +97,12 @@ class Div_Block {
 
 		wp_enqueue_script( $handle );
 
-		// wp_enqueue_style(
-		// 	$handle,
-		// 	Divb::get_instance()->dir_url . '/css/' . $handle . '.min.css',
-		// 	array( 'wp-edit-blocks' ),
-		// 	filemtime( Divb::get_instance()->dir_path . 'css/' . $handle . '.min.css' )
-		// );
+		wp_enqueue_style(
+			$handle,
+			Divb::get_instance()->dir_url . '/css/' . $handle . '.min.css',
+			array( 'wp-edit-blocks' ),
+			filemtime( Divb::get_instance()->dir_path . 'css/' . $handle . '.min.css' )
+		);
 	}
 
 }
