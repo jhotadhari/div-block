@@ -1,9 +1,4 @@
 /**
- * External dependencies
- */
-import extender from 'object-extender';
-
-/**
  * WordPress dependencies
  */
 const { Component } = wp.element;
