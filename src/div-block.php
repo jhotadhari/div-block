@@ -23,6 +23,10 @@ function divb_init() {
 		'textdomain'	=> 'wde_replace_textDomain',
 		'FILE_CONST'	=> __FILE__,
 		'db_version'	=> 0,
+		'deps'	=> array(
+			'php_version' => 'wde_replace_phpRequiresAtLeast',			// required php version
+			'wp_version' => 'wde_replace_wpRequiresAtLeast',			// required wp version
+		),
 	);
 
 	// see ./classes/Divb.php
