@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.1.2 - 2019-07-07
+Update to `croox/wp-dev-env-frame#0.6.0`
+
+### Changed
+- Update to `croox/wp-dev-env-frame#0.6.0`
+
 ## 0.1.1 - 2019-06-25
 Adjust editor appearance to render bootstraps `.row` and `.col` classes better
 

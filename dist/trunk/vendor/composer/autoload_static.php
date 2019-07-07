@@ -141,6 +141,7 @@ class ComposerStaticInit4c9affc4f0889c86ac14f13a46386197
         'croox\\wde\\List_Table_Meta_Column' => __DIR__ . '/..' . '/croox/wp-dev-env-frame/src/List_Table_Meta_Column.php',
         'croox\\wde\\Plugin' => __DIR__ . '/..' . '/croox/wp-dev-env-frame/src/Plugin.php',
         'croox\\wde\\Project' => __DIR__ . '/..' . '/croox/wp-dev-env-frame/src/Project.php',
+        'croox\\wde\\Register_Post_Meta' => __DIR__ . '/..' . '/croox/wp-dev-env-frame/src/Register_Post_Meta.php',
         'croox\\wde\\Theme' => __DIR__ . '/..' . '/croox/wp-dev-env-frame/src/Theme.php',
         'croox\\wde\\Theme_Twentynineteen' => __DIR__ . '/..' . '/croox/wp-dev-env-frame/src/Theme_Twentynineteen.php',
         'croox\\wde\\utils\\Arr' => __DIR__ . '/..' . '/croox/wp-dev-env-frame/src/utils/Arr.php',
@@ -148,6 +149,7 @@ class ComposerStaticInit4c9affc4f0889c86ac14f13a46386197
         'croox\\wde\\utils\\Color' => __DIR__ . '/..' . '/croox/wp-dev-env-frame/src/utils/Color.php',
         'croox\\wde\\utils\\Post' => __DIR__ . '/..' . '/croox/wp-dev-env-frame/src/utils/Post.php',
         'croox\\wde\\utils\\Post_Type' => __DIR__ . '/..' . '/croox/wp-dev-env-frame/src/utils/Post_Type.php',
+        'croox\\wde\\utils\\Wpml' => __DIR__ . '/..' . '/croox/wp-dev-env-frame/src/utils/Wpml.php',
         'divb\\Div_Block' => __DIR__ . '/../..' . '/classes/Div_Block.php',
         'divb\\Divb' => __DIR__ . '/../..' . '/classes/Divb.php',
     );
