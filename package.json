@@ -5,7 +5,7 @@
   "uri": "https://github.com/jhotadhari/div-block",
   "textDomain": "divb",
   "domainPath": "/languages",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Just a simple div Block. Nothing else.",
   "main": "index.js",
   "author": "jhotadhari",
