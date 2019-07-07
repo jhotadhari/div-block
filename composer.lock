@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c6b7f35be20695c45f747d99da8ea110",
-    "content-hash": "9f38127c71501b05910b4bfec32b83f1",
+    "hash": "a20c9cd2ea4603cb46e285edaa6ceac5",
+    "content-hash": "90b80183d34e642580300a0818a79eab",
     "packages": [],
     "packages-dev": [
         {
@@ -130,16 +130,16 @@
         },
         {
             "name": "croox/wp-dev-env-frame",
-            "version": "0.3.0",
+            "version": "0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/croox/wp-dev-env-frame.git",
-                "reference": "9e77a77b25a2f7875e4fc977920abaa245bfc220"
+                "reference": "af4554244d847a6c00a781b26375f8d8e9014835"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/croox/wp-dev-env-frame/zipball/9e77a77b25a2f7875e4fc977920abaa245bfc220",
-                "reference": "9e77a77b25a2f7875e4fc977920abaa245bfc220",
+                "url": "https://api.github.com/repos/croox/wp-dev-env-frame/zipball/af4554244d847a6c00a781b26375f8d8e9014835",
+                "reference": "af4554244d847a6c00a781b26375f8d8e9014835",
                 "shasum": ""
             },
             "type": "library",
@@ -160,10 +160,10 @@
             "description": "some frame for wp-dev-env",
             "homepage": "https://github.com/croox/wp-dev-env-frame",
             "support": {
-                "source": "https://github.com/croox/wp-dev-env-frame/tree/0.3.0",
+                "source": "https://github.com/croox/wp-dev-env-frame/tree/0.6.1",
                 "issues": "https://github.com/croox/wp-dev-env-frame/issues"
             },
-            "time": "2019-05-15 10:44:47"
+            "time": "2019-07-07 11:37:22"
         },
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
@@ -233,16 +233,16 @@
         },
         {
             "name": "phpcompatibility/php-compatibility",
-            "version": "9.1.1",
+            "version": "9.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCompatibility/PHPCompatibility.git",
-                "reference": "2b63c5d284ab8857f7b1d5c240ddb507a6b2293c"
+                "reference": "3db1bf1e28123fd574a4ae2e9a84072826d51b5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCompatibility/PHPCompatibility/zipball/2b63c5d284ab8857f7b1d5c240ddb507a6b2293c",
-                "reference": "2b63c5d284ab8857f7b1d5c240ddb507a6b2293c",
+                "url": "https://api.github.com/repos/PHPCompatibility/PHPCompatibility/zipball/3db1bf1e28123fd574a4ae2e9a84072826d51b5e",
+                "reference": "3db1bf1e28123fd574a4ae2e9a84072826d51b5e",
                 "shasum": ""
             },
             "require": {
@@ -256,7 +256,7 @@
                 "phpunit/phpunit": "~4.5 || ^5.0 || ^6.0 || ^7.0"
             },
             "suggest": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3 || This Composer plugin will sort out the PHPCS 'installed_paths' automatically.",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5 || This Composer plugin will sort out the PHPCS 'installed_paths' automatically.",
                 "roave/security-advisories": "dev-master || Helps prevent installing dependencies with known security issues."
             },
             "type": "phpcodesniffer-standard",
@@ -287,7 +287,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2018-12-30 23:16:27"
+            "time": "2019-06-27 19:58:56"
         },
         {
             "name": "phpcompatibility/phpcompatibility-paragonie",
@@ -445,12 +445,12 @@
             "version": "1.2.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git",
+                "url": "https://github.com/WordPress/WordPress-Coding-Standards.git",
                 "reference": "f328bcafd97377e8e5e5d7b244d5ddbf301a3a5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress-Coding-Standards/WordPress-Coding-Standards/zipball/f328bcafd97377e8e5e5d7b244d5ddbf301a3a5c",
+                "url": "https://api.github.com/repos/WordPress/WordPress-Coding-Standards/zipball/f328bcafd97377e8e5e5d7b244d5ddbf301a3a5c",
                 "reference": "f328bcafd97377e8e5e5d7b244d5ddbf301a3a5c",
                 "shasum": ""
             },
