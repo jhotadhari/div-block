@@ -21,7 +21,7 @@ Can be used as a wrapper for any other block(s).
 This Block aims to be simple. The only way to customize it, is by assinging additional CSS classes.
 
 The block styling within the editor is somehow adjusted to render bootstraps `.row` and `.col*` classes the right way.
-But this Plugin will not load bootsrap, or anything else external. If you need bootstrap (frontend or editor), load it by yourself!
+But this Plugin will not load bootstrap, or anything else external. If you need bootstrap (frontend or editor), load it by yourself!
 
 ## Installation ##
 Upload and install this Theme the same way you'd install any other Theme.
@@ -37,6 +37,12 @@ Upload and install this Theme the same way you'd install any other Theme.
 # 
 
 ## Changelog ##
+
+## 0.1.2 - 2019-07-07
+Update to `croox/wp-dev-env-frame#0.6.0`
+
+### Changed
+- Update to `croox/wp-dev-env-frame#0.6.0`
 
 ## 0.1.1 - 2019-06-25
 Adjust editor appearance to render bootstraps `.row` and `.col` classes better

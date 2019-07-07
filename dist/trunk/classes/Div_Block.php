@@ -33,7 +33,6 @@ class Div_Block {
 	public function hooks() {
 		add_action( 'init', array( $this, 'register_block' ) );
 		add_action( 'enqueue_block_editor_assets', array( $this, 'enqueue_editor_assets' ) );
-		// add_action( 'enqueue_block_assets', array( $this, 'enqueue_frontend_assets' ) );
 	}
 
 	public function register_block() {
@@ -43,7 +42,7 @@ class Div_Block {
 				// 'editor_style' => $this->get_handle( 'editor' ),
 				// 'style' => $this->get_handle( 'frontend' ),
 				// 'script' => $this->get_handle( 'frontend' ),
-				'render_callback' => array( $this, 'render' ),
+				// 'render_callback' => array( $this, 'render' ),
 			) );
 		}
 	}
@@ -55,54 +54,28 @@ class Div_Block {
 		}
 	}
 
-	// protected function get_localize_data(){
-	// 	$localize_data = array();
-	// 	return $localize_data;
-	// }
-
-	// public function enqueue_frontend_assets() {
-
-	// 	// check if we are on frontend
-	// 	if ( is_admin() )
-	// 		return;
-
-	// 	$handle = $this->get_handle( 'frontend' );
-
-	// 	// wp_enqueue_style(
-	// 	// 	$handle,
-	// 	// 	Divb::get_instance()->dir_url . '/css/' . $handle . '.min.css',
-	// 	// 	array( 'wp-blocks' ),
-	// 	// 	filemtime( Divb::get_instance()->dir_path . 'css/' . $handle . '.min.css' )
-	// 	// );
-	// }
-
 	public function enqueue_editor_assets() {
 		$handle = $this->get_handle( 'editor' );		// returns 'divb_block_div_block_editor'
 
-		wp_register_script(
-			$handle,
-			Divb::get_instance()->dir_url . '/js/' . $handle . '.min.js',
-			array(
+		namespace\Divb::get_instance()->register_script( array(
+			'handle'		=> $handle,
+			'deps'			=> array(
 				'wp-blocks',
 				'wp-i18n',
 				'wp-element',
 				'wp-edit-post',
 			),
-			filemtime( Divb::get_instance()->dir_path . 'js/' . $handle . '.min.js' )
-		);
+			'in_footer'		=> true,
+			'enqueue'		=> true,
+		) );
 
-		// wp_localize_script( $handle, 'divbData', $this->get_localize_data() );
+		namespace\Divb::get_instance()->register_style( array(
+			'handle'		=> $handle,
+			'enqueue'		=> true,
+			'deps'			=> array( 'wp-edit-blocks' ),
+		) );
 
-		wp_set_script_translations( $handle, 'divb', Divb::get_instance()->dir_path . 'languages' );
 
-		wp_enqueue_script( $handle );
-
-		wp_enqueue_style(
-			$handle,
-			Divb::get_instance()->dir_url . '/css/' . $handle . '.min.css',
-			array( 'wp-edit-blocks' ),
-			filemtime( Divb::get_instance()->dir_path . 'css/' . $handle . '.min.css' )
-		);
 	}
 
 }

@@ -5,7 +5,7 @@
   "uri": "https://github.com/jhotadhari/div-block",
   "textDomain": "divb",
   "domainPath": "/languages",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Just a simple div Block. Nothing else.",
   "main": "index.js",
   "author": "jhotadhari",
@@ -28,7 +28,6 @@
   },
   "devDependencies": {
     "grunt": "^1.0.3",
-    "object-extender": "^2.0.4",
     "wp-dev-env-grunt": "git+https://github.com/croox/wp-dev-env-grunt.git#0.8.0"
   },
   "browserify-shim": {

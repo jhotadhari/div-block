@@ -122,45 +122,6 @@
         ]
     },
     {
-        "name": "croox/wp-dev-env-frame",
-        "version": "0.3.0",
-        "version_normalized": "0.3.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/croox/wp-dev-env-frame.git",
-            "reference": "9e77a77b25a2f7875e4fc977920abaa245bfc220"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/croox/wp-dev-env-frame/zipball/9e77a77b25a2f7875e4fc977920abaa245bfc220",
-            "reference": "9e77a77b25a2f7875e4fc977920abaa245bfc220",
-            "shasum": ""
-        },
-        "time": "2019-05-15 10:44:47",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "croox\\wde\\": "src"
-            }
-        },
-        "license": [
-            "GPL-2.0-or-later"
-        ],
-        "authors": [
-            {
-                "name": "jhotadhari",
-                "email": "tellme@waterproof-webdesign.info"
-            }
-        ],
-        "description": "some frame for wp-dev-env",
-        "homepage": "https://github.com/croox/wp-dev-env-frame",
-        "support": {
-            "source": "https://github.com/croox/wp-dev-env-frame/tree/0.3.0",
-            "issues": "https://github.com/croox/wp-dev-env-frame/issues"
-        }
-    },
-    {
         "name": "squizlabs/php_codesniffer",
         "version": "3.4.2",
         "version_normalized": "3.4.2.0",
@@ -282,66 +243,6 @@
         ]
     },
     {
-        "name": "phpcompatibility/php-compatibility",
-        "version": "9.1.1",
-        "version_normalized": "9.1.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/PHPCompatibility/PHPCompatibility.git",
-            "reference": "2b63c5d284ab8857f7b1d5c240ddb507a6b2293c"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/PHPCompatibility/PHPCompatibility/zipball/2b63c5d284ab8857f7b1d5c240ddb507a6b2293c",
-            "reference": "2b63c5d284ab8857f7b1d5c240ddb507a6b2293c",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3",
-            "squizlabs/php_codesniffer": "^2.3 || ^3.0.2"
-        },
-        "conflict": {
-            "squizlabs/php_codesniffer": "2.6.2"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "~4.5 || ^5.0 || ^6.0 || ^7.0"
-        },
-        "suggest": {
-            "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3 || This Composer plugin will sort out the PHPCS 'installed_paths' automatically.",
-            "roave/security-advisories": "dev-master || Helps prevent installing dependencies with known security issues."
-        },
-        "time": "2018-12-30 23:16:27",
-        "type": "phpcodesniffer-standard",
-        "installation-source": "dist",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "LGPL-3.0-or-later"
-        ],
-        "authors": [
-            {
-                "name": "Contributors",
-                "homepage": "https://github.com/PHPCompatibility/PHPCompatibility/graphs/contributors"
-            },
-            {
-                "name": "Wim Godden",
-                "homepage": "https://github.com/wimg",
-                "role": "lead"
-            },
-            {
-                "name": "Juliette Reinders Folmer",
-                "homepage": "https://github.com/jrfnl",
-                "role": "lead"
-            }
-        ],
-        "description": "A set of sniffs for PHP_CodeSniffer that checks for PHP cross-version compatibility.",
-        "homepage": "http://techblog.wimgodden.be/tag/codesniffer/",
-        "keywords": [
-            "compatibility",
-            "phpcs",
-            "standards"
-        ]
-    },
-    {
         "name": "phpcompatibility/phpcompatibility-paragonie",
         "version": "1.0.1",
         "version_normalized": "1.0.1.0",
@@ -451,12 +352,12 @@
         "version_normalized": "1.2.1.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git",
+            "url": "https://github.com/WordPress/WordPress-Coding-Standards.git",
             "reference": "f328bcafd97377e8e5e5d7b244d5ddbf301a3a5c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/WordPress-Coding-Standards/WordPress-Coding-Standards/zipball/f328bcafd97377e8e5e5d7b244d5ddbf301a3a5c",
+            "url": "https://api.github.com/repos/WordPress/WordPress-Coding-Standards/zipball/f328bcafd97377e8e5e5d7b244d5ddbf301a3a5c",
             "reference": "f328bcafd97377e8e5e5d7b244d5ddbf301a3a5c",
             "shasum": ""
         },
@@ -560,6 +461,105 @@
             "standards",
             "themes",
             "wordpress"
+        ]
+    },
+    {
+        "name": "croox/wp-dev-env-frame",
+        "version": "0.6.0",
+        "version_normalized": "0.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/croox/wp-dev-env-frame.git",
+            "reference": "7a8247afc9f03b0e3846d35cdfe83257be4dc898"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/croox/wp-dev-env-frame/zipball/7a8247afc9f03b0e3846d35cdfe83257be4dc898",
+            "reference": "7a8247afc9f03b0e3846d35cdfe83257be4dc898",
+            "shasum": ""
+        },
+        "time": "2019-07-07 05:19:21",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "croox\\wde\\": "src"
+            }
+        },
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "jhotadhari",
+                "email": "tellme@waterproof-webdesign.info"
+            }
+        ],
+        "description": "some frame for wp-dev-env",
+        "homepage": "https://github.com/croox/wp-dev-env-frame",
+        "support": {
+            "source": "https://github.com/croox/wp-dev-env-frame/tree/0.6.0",
+            "issues": "https://github.com/croox/wp-dev-env-frame/issues"
+        }
+    },
+    {
+        "name": "phpcompatibility/php-compatibility",
+        "version": "9.2.0",
+        "version_normalized": "9.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/PHPCompatibility/PHPCompatibility.git",
+            "reference": "3db1bf1e28123fd574a4ae2e9a84072826d51b5e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/PHPCompatibility/PHPCompatibility/zipball/3db1bf1e28123fd574a4ae2e9a84072826d51b5e",
+            "reference": "3db1bf1e28123fd574a4ae2e9a84072826d51b5e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3",
+            "squizlabs/php_codesniffer": "^2.3 || ^3.0.2"
+        },
+        "conflict": {
+            "squizlabs/php_codesniffer": "2.6.2"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.5 || ^5.0 || ^6.0 || ^7.0"
+        },
+        "suggest": {
+            "dealerdirect/phpcodesniffer-composer-installer": "^0.5 || This Composer plugin will sort out the PHPCS 'installed_paths' automatically.",
+            "roave/security-advisories": "dev-master || Helps prevent installing dependencies with known security issues."
+        },
+        "time": "2019-06-27 19:58:56",
+        "type": "phpcodesniffer-standard",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-3.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Contributors",
+                "homepage": "https://github.com/PHPCompatibility/PHPCompatibility/graphs/contributors"
+            },
+            {
+                "name": "Wim Godden",
+                "homepage": "https://github.com/wimg",
+                "role": "lead"
+            },
+            {
+                "name": "Juliette Reinders Folmer",
+                "homepage": "https://github.com/jrfnl",
+                "role": "lead"
+            }
+        ],
+        "description": "A set of sniffs for PHP_CodeSniffer that checks for PHP cross-version compatibility.",
+        "homepage": "http://techblog.wimgodden.be/tag/codesniffer/",
+        "keywords": [
+            "compatibility",
+            "phpcs",
+            "standards"
         ]
     }
 ]
