@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.1.3 - 2019-07-07
+Updated to generator-wp-dev-env#0.10.1 ( wp-dev-env-grunt#0.8.3 wp-dev-env-frame#0.6.1 )
+
+### Changed
+- Updated to generator-wp-dev-env#0.10.1 ( wp-dev-env-grunt#0.8.3 wp-dev-env-frame#0.6.1 )
+
 ## 0.1.2 - 2019-07-07
 Update to `croox/wp-dev-env-frame#0.6.0`
 
