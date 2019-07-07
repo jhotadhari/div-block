@@ -464,45 +464,6 @@
         ]
     },
     {
-        "name": "croox/wp-dev-env-frame",
-        "version": "0.6.0",
-        "version_normalized": "0.6.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/croox/wp-dev-env-frame.git",
-            "reference": "7a8247afc9f03b0e3846d35cdfe83257be4dc898"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/croox/wp-dev-env-frame/zipball/7a8247afc9f03b0e3846d35cdfe83257be4dc898",
-            "reference": "7a8247afc9f03b0e3846d35cdfe83257be4dc898",
-            "shasum": ""
-        },
-        "time": "2019-07-07 05:19:21",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "croox\\wde\\": "src"
-            }
-        },
-        "license": [
-            "GPL-2.0-or-later"
-        ],
-        "authors": [
-            {
-                "name": "jhotadhari",
-                "email": "tellme@waterproof-webdesign.info"
-            }
-        ],
-        "description": "some frame for wp-dev-env",
-        "homepage": "https://github.com/croox/wp-dev-env-frame",
-        "support": {
-            "source": "https://github.com/croox/wp-dev-env-frame/tree/0.6.0",
-            "issues": "https://github.com/croox/wp-dev-env-frame/issues"
-        }
-    },
-    {
         "name": "phpcompatibility/php-compatibility",
         "version": "9.2.0",
         "version_normalized": "9.2.0.0",
@@ -561,5 +522,44 @@
             "phpcs",
             "standards"
         ]
+    },
+    {
+        "name": "croox/wp-dev-env-frame",
+        "version": "0.6.1",
+        "version_normalized": "0.6.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/croox/wp-dev-env-frame.git",
+            "reference": "af4554244d847a6c00a781b26375f8d8e9014835"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/croox/wp-dev-env-frame/zipball/af4554244d847a6c00a781b26375f8d8e9014835",
+            "reference": "af4554244d847a6c00a781b26375f8d8e9014835",
+            "shasum": ""
+        },
+        "time": "2019-07-07 11:37:22",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "croox\\wde\\": "src"
+            }
+        },
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "jhotadhari",
+                "email": "tellme@waterproof-webdesign.info"
+            }
+        ],
+        "description": "some frame for wp-dev-env",
+        "homepage": "https://github.com/croox/wp-dev-env-frame",
+        "support": {
+            "source": "https://github.com/croox/wp-dev-env-frame/tree/0.6.1",
+            "issues": "https://github.com/croox/wp-dev-env-frame/issues"
+        }
     }
 ]

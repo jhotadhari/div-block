@@ -3,7 +3,7 @@
 	Plugin Name: Div Block
 	Plugin URI: https://github.com/jhotadhari/div-block
 	Description: Just a simple div Block. Nothing else.
-	Version: 0.1.2
+	Version: 0.1.3
 	Author: jhotadhari
 	Author URI: https://github.com/jhotadhari
 	License: GNU General Public License v2 or later
@@ -32,16 +32,36 @@ include_once( dirname( __FILE__ ) . '/vendor/autoload.php' );
 function divb_init() {
 
 	$init_args = array(
-		'version'	=> '0.1.2',
-		'slug'	=> 'div-block',
-		'name'	=> 'Div Block',
-		'prefix'	=> 'divb',
+		'version'		=> '0.1.3',
+		'slug'			=> 'div-block',
+		'name'			=> 'Div Block',
+		'prefix'		=> 'divb',
 		'textdomain'	=> 'divb',
 		'FILE_CONST'	=> __FILE__,
 		'db_version'	=> 0,
-		'deps'	=> array(
-			'php_version' => '7.0.0',			// required php version
-			'wp_version' => '5.0.0',			// required wp version
+		'deps'			=> array(
+			'php_version'	=> '7.0.0',		// required php version
+			'wp_version'	=> '5.0.0',			// required wp version
+			'plugins'    	=> array(
+				/*
+				'woocommerce' => array(
+					'name'              => 'WooCommerce',               // full name
+					'link'              => 'https://woocommerce.com/',  // link
+					'ver_at_least'      => '3.0.0',                     // min version of required plugin
+					'ver_tested_up_to'  => '3.2.1',                     // tested with required plugin up to
+					'class'             => 'WooCommerce',               // test by class
+					//'function'        => 'WooCommerce',               // test by function
+				),
+				*/
+			),
+			'php_ext'     => array(
+				/*
+				'xml' => array(
+					'name'              => 'Xml',                                           // full name
+					'link'              => 'http://php.net/manual/en/xml.installation.php', // link
+				),
+				*/
+			),
 		),
 	);
 
@@ -49,6 +69,5 @@ function divb_init() {
 	return divb\Divb::get_instance( $init_args );
 }
 divb_init();
-
 
 ?>
