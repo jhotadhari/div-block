@@ -102,6 +102,7 @@ return array(
     'croox\\wde\\List_Table_Meta_Column' => $vendorDir . '/croox/wp-dev-env-frame/src/List_Table_Meta_Column.php',
     'croox\\wde\\Plugin' => $vendorDir . '/croox/wp-dev-env-frame/src/Plugin.php',
     'croox\\wde\\Project' => $vendorDir . '/croox/wp-dev-env-frame/src/Project.php',
+    'croox\\wde\\Register_Post_Meta' => $vendorDir . '/croox/wp-dev-env-frame/src/Register_Post_Meta.php',
     'croox\\wde\\Theme' => $vendorDir . '/croox/wp-dev-env-frame/src/Theme.php',
     'croox\\wde\\Theme_Twentynineteen' => $vendorDir . '/croox/wp-dev-env-frame/src/Theme_Twentynineteen.php',
     'croox\\wde\\utils\\Arr' => $vendorDir . '/croox/wp-dev-env-frame/src/utils/Arr.php',
@@ -109,6 +110,7 @@ return array(
     'croox\\wde\\utils\\Color' => $vendorDir . '/croox/wp-dev-env-frame/src/utils/Color.php',
     'croox\\wde\\utils\\Post' => $vendorDir . '/croox/wp-dev-env-frame/src/utils/Post.php',
     'croox\\wde\\utils\\Post_Type' => $vendorDir . '/croox/wp-dev-env-frame/src/utils/Post_Type.php',
+    'croox\\wde\\utils\\Wpml' => $vendorDir . '/croox/wp-dev-env-frame/src/utils/Wpml.php',
     'divb\\Div_Block' => $baseDir . '/classes/Div_Block.php',
     'divb\\Divb' => $baseDir . '/classes/Divb.php',
 );
