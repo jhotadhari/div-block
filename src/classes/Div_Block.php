@@ -7,75 +7,30 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-class Div_Block {
+use croox\wde;
 
-	protected static $instance = null;
-	protected $namspace = 'divb/div-block';
+class Div_Block extends wde\Block {
 
-	protected $handles = array(
-		'editor' => 'divb_block_div_block_editor',
-		'frontend' => 'divb_block_div_block_frontend',
-	);
+	protected function initialize() {
+		// Block type name excluding namespace. Use dashes.
+		$this->name = str_replace( '_', '-',
+			sanitize_title_with_dashes( 'div-block' )
+		);
 
-	public static function get_instance() {
-		if ( null === self::$instance ) {
-			self::$instance = new self();
-			self::$instance->hooks();
-		}
-
-		return self::$instance;
+		$this->project_class_name = 'divb\Divb';
 	}
 
-	protected function __construct() {
-		// ... silence
-	}
+	protected function setup_handles() {
+		$prefix = $this->project_class_name::get_instance()->prefix;
+		$_name = str_replace( '-', '_', $this->name );
 
-	public function hooks() {
-		add_action( 'init', array( $this, 'register_block' ) );
-		add_action( 'enqueue_block_editor_assets', array( $this, 'enqueue_editor_assets' ) );
-	}
-
-	public function register_block() {
-		if ( function_exists( 'register_block_type' ) ) {
-			register_block_type( $this->namspace, array(
-				'editor_script' => $this->get_handle( 'editor' ),
-				// 'editor_style' => $this->get_handle( 'editor' ),
-				// 'style' => $this->get_handle( 'frontend' ),
-				// 'script' => $this->get_handle( 'frontend' ),
-				// 'render_callback' => array( $this, 'render' ),
-			) );
-		}
-	}
-
-	protected function get_handle( $key ){
-		$handles = $this->handles;
-		if ( array_key_exists( $key, $handles ) ){
-			return $handles[$key];
-		}
-	}
-
-	public function enqueue_editor_assets() {
-		$handle = $this->get_handle( 'editor' );		// returns 'divb_block_div_block_editor'
-
-		namespace\Divb::get_instance()->register_script( array(
-			'handle'		=> $handle,
-			'deps'			=> array(
-				'wp-blocks',
-				'wp-i18n',
-				'wp-element',
-				'wp-edit-post',
-			),
-			'in_footer'		=> true,
-			'enqueue'		=> true,
-		) );
-
-		namespace\Divb::get_instance()->register_style( array(
-			'handle'		=> $handle,
-			'enqueue'		=> true,
-			'deps'			=> array( 'wp-edit-blocks' ),
-		) );
-
-
+		// Define handles only for editor assets. So nothing will be loaded in frontend.
+		$this->handles = array(
+			'style_admin'     => $prefix . '_block_' . $_name . '_admin',
+			'script_admin'    => $prefix . '_block_' . $_name . '_admin',
+			// 'style_frontend'  => $prefix . '_block_' . $_name . '_frontend',
+			// 'script_frontend' => $prefix . '_block_' . $_name . '_frontend',
+		);
 	}
 
 }

@@ -8,7 +8,6 @@ if ( ! defined( 'WPINC' ) ) {
 function divb_block_div_block() {
 	return divb\Div_Block::get_instance();
 }
-
 divb_block_div_block();
 
 ?>

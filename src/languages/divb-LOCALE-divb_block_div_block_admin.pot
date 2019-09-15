@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: div-block 0.1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-09 13:10+0545\n"
+"POT-Creation-Date: 2019-07-09 15:41+0545\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/js/divb_block_div_block_editor.js:34
+#: src/js/divb_block_div_block_admin.js:34
 msgid "Div Block"
 msgstr ""
 
-#: src/js/divb_block_div_block_editor.js:40
+#: src/js/divb_block_div_block_admin.js:40
 msgid "Just a simple div Block."
 msgstr ""

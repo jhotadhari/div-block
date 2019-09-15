@@ -3,7 +3,7 @@
 	Plugin Name: Div Block
 	Plugin URI: https://github.com/jhotadhari/div-block
 	Description: Just a simple div Block. Nothing else.
-	Version: 0.1.3
+	Version: 0.1.4
 	Author: jhotadhari
 	Author URI: https://github.com/jhotadhari
 	License: GNU General Public License v2 or later
@@ -32,13 +32,18 @@ include_once( dirname( __FILE__ ) . '/vendor/autoload.php' );
 function divb_init() {
 
 	$init_args = array(
-		'version'		=> '0.1.3',
+		'version'		=> '0.1.4',
 		'slug'			=> 'div-block',
 		'name'			=> 'Div Block',
 		'prefix'		=> 'divb',
 		'textdomain'	=> 'divb',
 		'FILE_CONST'	=> __FILE__,
 		'db_version'	=> 0,
+		'wde'			=> array(
+			'generator-wp-dev-env'	=> '0.10.3',
+			'wp-dev-env-grunt'		=> '0.8.5',
+			'wp-dev-env-frame'		=> '0.7.1',
+		),
 		'deps'			=> array(
 			'php_version'	=> '7.0.0',		// required php version
 			'wp_version'	=> '5.0.0',			// required wp version

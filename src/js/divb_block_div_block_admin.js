@@ -22,9 +22,9 @@ const {
 /**
  * Internal dependencies
  */
-import Container from './divb_block_div_block_editor/components/Container.jsx';
+import Container from './divb_block_div_block_admin/components/Container.jsx';
 
-// That's how wp isFinite naming this block
+// That's how wp is naming this block
 const blockClassName = 'wp-block-divb-div-block';
 
 /**
@@ -33,11 +33,16 @@ const blockClassName = 'wp-block-divb-div-block';
 registerBlockType( 'divb/div-block', {
 	title: __( 'Div Block', 'divb' ),
 
-	icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/></svg>,	// https://material.io/tools/icons/?icon=crop_din&style=baseline
+	icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M4 10h12v2H4zm0-4h12v2H4zm0 8h8v2H4zm10 0v6l5-3z"/></svg>,	// https://material.io/tools/icons/?icon=playlist_play&style=baseline
 
 	category: 'layout',
 
 	description: __( 'Just a simple div Block.', 'divb' ),
+
+	keywords: [
+		__( 'container' ),
+		__( 'wrapper' ),
+	],
 
 	supports: {
 		html: true,
