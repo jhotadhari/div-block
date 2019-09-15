@@ -1,0 +1,20 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"X-Generator: babel-plugin-makepot\n"
+
+#: src/js/divb_block_div_block_admin.js:34
+msgid "Div Block"
+msgstr ""
+
+#: src/js/divb_block_div_block_admin.js:40
+msgid "Just a simple div Block."
+msgstr ""
+
+#: src/js/divb_block_div_block_admin.js:43
+msgid "container"
+msgstr ""
+
+#: src/js/divb_block_div_block_admin.js:44
+msgid "wrapper"
+msgstr ""

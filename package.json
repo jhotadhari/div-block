@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "grunt": "^1.0.3",
-    "wp-dev-env-grunt": "git+https://github.com/croox/wp-dev-env-grunt.git#0.8.3"
+    "wp-dev-env-grunt": "git+https://github.com/croox/wp-dev-env-grunt.git#0.8.5"
   },
   "browserify-shim": {
     "jquery": "global:jQuery",
