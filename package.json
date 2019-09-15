@@ -21,7 +21,7 @@
   "wpRequiresAtLeast": "5.0.0",
   "phpRequiresAtLeast": "7.0.0",
   "generator": {
-    "version": "0.10.1"
+    "version": "0.10.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

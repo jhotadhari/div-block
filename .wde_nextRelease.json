@@ -2,11 +2,7 @@
   "changes": [
     {
       "type": "changed",
-      "message": "Updated to `croox/wp-dev-env-frame#0.7.1`"
-    },
-    {
-      "type": "changed",
-      "message": "Updated to `croox/wp-dev-env-grunt#0.8.5`"
+      "message": "Updated to generator-wp-dev-env#0.10.3 ( wp-dev-env-grunt#0.8.5 wp-dev-env-frame#0.7.1 )"
     }
   ]
 }
