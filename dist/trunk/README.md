@@ -38,6 +38,12 @@ Upload and install this Theme the same way you'd install any other Theme.
 
 ## Changelog ##
 
+## 0.1.7 - 2019-09-27
+Update to wp-dev-env-frame#0.7.3
+
+### Changed
+- Update to wp-dev-env-frame#0.7.3
+
 ## 0.1.6 - 2019-09-16
 Fix project_kind in project init args
 
