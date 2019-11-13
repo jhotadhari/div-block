@@ -8,7 +8,7 @@ if ( ! defined( 'WPINC' ) ) {
 function divb_include_fun() {
 
 	$paths = array(
-		'/inc/fun/divb_block_div_block.php',
+		'inc/fun/divb_block_div_block.php',
 	);
 
 	if ( count( $paths ) > 0 ) {
