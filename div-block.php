@@ -3,7 +3,7 @@
 	Plugin Name: Div Block
 	Plugin URI: https://github.com/jhotadhari/div-block
 	Description: Just a simple div Block. Nothing else.
-	Version: 0.1.7
+	Version: 0.1.8
 	Author: jhotadhari
 	Author URI: https://github.com/jhotadhari
 	License: GNU General Public License v2 or later
