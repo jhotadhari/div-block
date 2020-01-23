@@ -38,6 +38,12 @@ Upload and install this Theme the same way you'd install any other Theme.
 
 ## Changelog ##
 
+## 0.1.10 - 2020-01-23
+Dependency update
+
+### Changed
+- Update to `wp-dev-env-grunt#0.9.5`
+
 ## 0.1.9 - 2019-11-13
 Updated to generator-wp-dev-env#0.10.9
 
