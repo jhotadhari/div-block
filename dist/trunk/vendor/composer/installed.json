@@ -1,190 +1,5 @@
 [
     {
-        "name": "dealerdirect/phpcodesniffer-composer-installer",
-        "version": "v0.5.0",
-        "version_normalized": "0.5.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Dealerdirect/phpcodesniffer-composer-installer.git",
-            "reference": "e749410375ff6fb7a040a68878c656c2e610b132"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Dealerdirect/phpcodesniffer-composer-installer/zipball/e749410375ff6fb7a040a68878c656c2e610b132",
-            "reference": "e749410375ff6fb7a040a68878c656c2e610b132",
-            "shasum": ""
-        },
-        "require": {
-            "composer-plugin-api": "^1.0",
-            "php": "^5.3|^7",
-            "squizlabs/php_codesniffer": "^2|^3"
-        },
-        "require-dev": {
-            "composer/composer": "*",
-            "phpcompatibility/php-compatibility": "^9.0",
-            "sensiolabs/security-checker": "^4.1.0"
-        },
-        "time": "2018-10-26 13:21:45",
-        "type": "composer-plugin",
-        "extra": {
-            "class": "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin"
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Franck Nijhof",
-                "email": "franck.nijhof@dealerdirect.com",
-                "homepage": "http://www.frenck.nl",
-                "role": "Developer / IT Manager"
-            }
-        ],
-        "description": "PHP_CodeSniffer Standards Composer Installer Plugin",
-        "homepage": "http://www.dealerdirect.com",
-        "keywords": [
-            "PHPCodeSniffer",
-            "PHP_CodeSniffer",
-            "code quality",
-            "codesniffer",
-            "composer",
-            "installer",
-            "phpcs",
-            "plugin",
-            "qa",
-            "quality",
-            "standard",
-            "standards",
-            "style guide",
-            "stylecheck",
-            "tests"
-        ]
-    },
-    {
-        "name": "wp-coding-standards/wpcs",
-        "version": "1.2.1",
-        "version_normalized": "1.2.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/WordPress/WordPress-Coding-Standards.git",
-            "reference": "f328bcafd97377e8e5e5d7b244d5ddbf301a3a5c"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/WordPress/WordPress-Coding-Standards/zipball/f328bcafd97377e8e5e5d7b244d5ddbf301a3a5c",
-            "reference": "f328bcafd97377e8e5e5d7b244d5ddbf301a3a5c",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3",
-            "squizlabs/php_codesniffer": "^2.9.0 || ^3.0.2"
-        },
-        "require-dev": {
-            "phpcompatibility/php-compatibility": "^9.0"
-        },
-        "suggest": {
-            "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3 || This Composer plugin will sort out the PHPCS 'installed_paths' automatically."
-        },
-        "time": "2018-12-18 09:43:51",
-        "type": "phpcodesniffer-standard",
-        "installation-source": "dist",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Contributors",
-                "homepage": "https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/graphs/contributors"
-            }
-        ],
-        "description": "PHP_CodeSniffer rules (sniffs) to enforce WordPress coding conventions",
-        "keywords": [
-            "phpcs",
-            "standards",
-            "wordpress"
-        ]
-    },
-    {
-        "name": "wptrt/wpthemereview",
-        "version": "0.1.0",
-        "version_normalized": "0.1.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/WPTRT/WPThemeReview.git",
-            "reference": "d9fa0dfff3e842efa9d7f804c9ec241408fd3c19"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/WPTRT/WPThemeReview/zipball/d9fa0dfff3e842efa9d7f804c9ec241408fd3c19",
-            "reference": "d9fa0dfff3e842efa9d7f804c9ec241408fd3c19",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.4",
-            "phpcompatibility/phpcompatibility-wp": "^2.0",
-            "squizlabs/php_codesniffer": "^3.3.0",
-            "wp-coding-standards/wpcs": "^1.0.0"
-        },
-        "require-dev": {
-            "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
-            "phpcompatibility/php-compatibility": "^9.0",
-            "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0",
-            "roave/security-advisories": "dev-master"
-        },
-        "suggest": {
-            "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3 || This Composer plugin will sort out the PHPCS 'installed_paths' automatically."
-        },
-        "time": "2018-10-31 17:02:38",
-        "type": "phpcodesniffer-standard",
-        "installation-source": "dist",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Theme Review Team",
-                "homepage": "https://make.wordpress.org/themes/handbook/",
-                "role": "Strategy and rule setting"
-            },
-            {
-                "name": "Ulrich Pogson",
-                "homepage": "https://github.com/grappler",
-                "role": "Lead developer"
-            },
-            {
-                "name": "Juliette Reinders Folmer",
-                "homepage": "https://github.com/jrfnl",
-                "role": "Lead developer"
-            },
-            {
-                "name": "Denis Žoljom",
-                "homepage": "https://github.com/dingo-d",
-                "role": "Plugin integration lead"
-            },
-            {
-                "name": "Contributors",
-                "homepage": "https://github.com/WPTRT/WPThemeReview/graphs/contributors"
-            }
-        ],
-        "description": "PHP_CodeSniffer rules (sniffs) to verify theme compliance with the rules for theme hosting on wordpress.org",
-        "homepage": "https://make.wordpress.org/themes/handbook/review/",
-        "keywords": [
-            "phpcs",
-            "standards",
-            "themes",
-            "wordpress"
-        ]
-    },
-    {
         "name": "composer/installers",
         "version": "v1.7.0",
         "version_normalized": "1.7.0.0",
@@ -210,7 +25,7 @@
             "composer/composer": "1.0.*@dev",
             "phpunit/phpunit": "^4.8.36"
         },
-        "time": "2019-08-12 15:00:31",
+        "time": "2019-08-12T15:00:31+00:00",
         "type": "composer-plugin",
         "extra": {
             "class": "Composer\\Installers\\Plugin",
@@ -309,6 +124,113 @@
         ]
     },
     {
+        "name": "croox/wp-dev-env-frame",
+        "version": "0.7.3",
+        "version_normalized": "0.7.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/croox/wp-dev-env-frame.git",
+            "reference": "da5d3b80f93100f7c58ae5875b29acff9f40e1af"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/croox/wp-dev-env-frame/zipball/da5d3b80f93100f7c58ae5875b29acff9f40e1af",
+            "reference": "da5d3b80f93100f7c58ae5875b29acff9f40e1af",
+            "shasum": ""
+        },
+        "time": "2019-09-27T11:42:28+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "croox\\wde\\": "src"
+            }
+        },
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "jhotadhari",
+                "email": "tellme@waterproof-webdesign.info"
+            }
+        ],
+        "description": "some frame for wp-dev-env",
+        "homepage": "https://github.com/croox/wp-dev-env-frame",
+        "support": {
+            "source": "https://github.com/croox/wp-dev-env-frame/tree/0.7.3",
+            "issues": "https://github.com/croox/wp-dev-env-frame/issues"
+        }
+    },
+    {
+        "name": "dealerdirect/phpcodesniffer-composer-installer",
+        "version": "v0.5.0",
+        "version_normalized": "0.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Dealerdirect/phpcodesniffer-composer-installer.git",
+            "reference": "e749410375ff6fb7a040a68878c656c2e610b132"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Dealerdirect/phpcodesniffer-composer-installer/zipball/e749410375ff6fb7a040a68878c656c2e610b132",
+            "reference": "e749410375ff6fb7a040a68878c656c2e610b132",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0",
+            "php": "^5.3|^7",
+            "squizlabs/php_codesniffer": "^2|^3"
+        },
+        "require-dev": {
+            "composer/composer": "*",
+            "phpcompatibility/php-compatibility": "^9.0",
+            "sensiolabs/security-checker": "^4.1.0"
+        },
+        "time": "2018-10-26T13:21:45+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Franck Nijhof",
+                "email": "franck.nijhof@dealerdirect.com",
+                "homepage": "http://www.frenck.nl",
+                "role": "Developer / IT Manager"
+            }
+        ],
+        "description": "PHP_CodeSniffer Standards Composer Installer Plugin",
+        "homepage": "http://www.dealerdirect.com",
+        "keywords": [
+            "PHPCodeSniffer",
+            "PHP_CodeSniffer",
+            "code quality",
+            "codesniffer",
+            "composer",
+            "installer",
+            "phpcs",
+            "plugin",
+            "qa",
+            "quality",
+            "standard",
+            "standards",
+            "style guide",
+            "stylecheck",
+            "tests"
+        ]
+    },
+    {
         "name": "phpcompatibility/php-compatibility",
         "version": "9.3.1",
         "version_normalized": "9.3.1.0",
@@ -337,7 +259,7 @@
             "dealerdirect/phpcodesniffer-composer-installer": "^0.5 || This Composer plugin will sort out the PHPCS 'installed_paths' automatically.",
             "roave/security-advisories": "dev-master || Helps prevent installing dependencies with known security issues."
         },
-        "time": "2019-09-05 18:36:49",
+        "time": "2019-09-05T18:36:49+00:00",
         "type": "phpcodesniffer-standard",
         "installation-source": "dist",
         "notification-url": "https://packagist.org/downloads/",
@@ -395,7 +317,7 @@
             "dealerdirect/phpcodesniffer-composer-installer": "^0.5 || This Composer plugin will sort out the PHP_CodeSniffer 'installed_paths' automatically.",
             "roave/security-advisories": "dev-master || Helps prevent installing dependencies with known security issues."
         },
-        "time": "2019-08-28 15:58:19",
+        "time": "2019-08-28T15:58:19+00:00",
         "type": "phpcodesniffer-standard",
         "installation-source": "dist",
         "notification-url": "https://packagist.org/downloads/",
@@ -448,7 +370,7 @@
             "dealerdirect/phpcodesniffer-composer-installer": "^0.5 || This Composer plugin will sort out the PHP_CodeSniffer 'installed_paths' automatically.",
             "roave/security-advisories": "dev-master || Helps prevent installing dependencies with known security issues."
         },
-        "time": "2019-08-28 14:22:28",
+        "time": "2019-08-28T14:22:28+00:00",
         "type": "phpcodesniffer-standard",
         "installation-source": "dist",
         "notification-url": "https://packagist.org/downloads/",
@@ -475,45 +397,6 @@
         ]
     },
     {
-        "name": "croox/wp-dev-env-frame",
-        "version": "0.7.3",
-        "version_normalized": "0.7.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/croox/wp-dev-env-frame.git",
-            "reference": "da5d3b80f93100f7c58ae5875b29acff9f40e1af"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/croox/wp-dev-env-frame/zipball/da5d3b80f93100f7c58ae5875b29acff9f40e1af",
-            "reference": "da5d3b80f93100f7c58ae5875b29acff9f40e1af",
-            "shasum": ""
-        },
-        "time": "2019-09-27 11:42:28",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "croox\\wde\\": "src"
-            }
-        },
-        "license": [
-            "GPL-2.0-or-later"
-        ],
-        "authors": [
-            {
-                "name": "jhotadhari",
-                "email": "tellme@waterproof-webdesign.info"
-            }
-        ],
-        "description": "some frame for wp-dev-env",
-        "homepage": "https://github.com/croox/wp-dev-env-frame",
-        "support": {
-            "source": "https://github.com/croox/wp-dev-env-frame/tree/0.7.3",
-            "issues": "https://github.com/croox/wp-dev-env-frame/issues"
-        }
-    },
-    {
         "name": "squizlabs/php_codesniffer",
         "version": "3.5.0",
         "version_normalized": "3.5.0.0",
@@ -537,7 +420,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
         },
-        "time": "2019-09-26 23:12:26",
+        "time": "2019-09-26T23:12:26+00:00",
         "bin": [
             "bin/phpcs",
             "bin/phpcbf"
@@ -567,57 +450,119 @@
         ]
     },
     {
-        "name": "cmb2/cmb2",
-        "version": "v2.6.0",
-        "version_normalized": "2.6.0.0",
+        "name": "wp-coding-standards/wpcs",
+        "version": "1.2.1",
+        "version_normalized": "1.2.1.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/CMB2/CMB2.git",
-            "reference": "008d9b83263d971d6bd41c27e31113db852d5ef3"
+            "url": "https://github.com/WordPress/WordPress-Coding-Standards.git",
+            "reference": "f328bcafd97377e8e5e5d7b244d5ddbf301a3a5c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/CMB2/CMB2/zipball/008d9b83263d971d6bd41c27e31113db852d5ef3",
-            "reference": "008d9b83263d971d6bd41c27e31113db852d5ef3",
+            "url": "https://api.github.com/repos/WordPress/WordPress-Coding-Standards/zipball/f328bcafd97377e8e5e5d7b244d5ddbf301a3a5c",
+            "reference": "f328bcafd97377e8e5e5d7b244d5ddbf301a3a5c",
             "shasum": ""
         },
         "require": {
-            "php": ">5.2.4"
+            "php": ">=5.3",
+            "squizlabs/php_codesniffer": "^2.9.0 || ^3.0.2"
         },
         "require-dev": {
-            "apigen/apigen": "4.1.2",
-            "nette/utils": "2.5.3",
-            "phpunit/phpunit": "6.5.13"
+            "phpcompatibility/php-compatibility": "^9.0"
         },
         "suggest": {
-            "composer/installers": "~1.0"
+            "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3 || This Composer plugin will sort out the PHPCS 'installed_paths' automatically."
         },
-        "time": "2019-01-21 04:30:08",
-        "type": "wordpress-plugin",
+        "time": "2018-12-18T09:43:51+00:00",
+        "type": "phpcodesniffer-standard",
         "installation-source": "dist",
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "GPL-2.0-or-later"
+            "MIT"
         ],
         "authors": [
             {
-                "name": "WebDevStudios",
-                "email": "contact@webdevstudios.com",
-                "homepage": "https://github.com/WebDevStudios",
-                "role": "Developer"
-            },
-            {
-                "name": "Justin Sternberg",
-                "email": "justin@dsgnwrks.pro",
-                "homepage": "https://dsgnwrks.pro",
-                "role": "Developer"
+                "name": "Contributors",
+                "homepage": "https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/graphs/contributors"
             }
         ],
-        "description": "CMB2 is a metabox, custom fields, and forms library for WordPress that will blow your mind.",
-        "homepage": "https://github.com/CMB2/CMB2",
+        "description": "PHP_CodeSniffer rules (sniffs) to enforce WordPress coding conventions",
         "keywords": [
-            "metabox",
-            "plugin",
+            "phpcs",
+            "standards",
+            "wordpress"
+        ]
+    },
+    {
+        "name": "wptrt/wpthemereview",
+        "version": "0.1.0",
+        "version_normalized": "0.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/WPTRT/WPThemeReview.git",
+            "reference": "d9fa0dfff3e842efa9d7f804c9ec241408fd3c19"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/WPTRT/WPThemeReview/zipball/d9fa0dfff3e842efa9d7f804c9ec241408fd3c19",
+            "reference": "d9fa0dfff3e842efa9d7f804c9ec241408fd3c19",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4",
+            "phpcompatibility/phpcompatibility-wp": "^2.0",
+            "squizlabs/php_codesniffer": "^3.3.0",
+            "wp-coding-standards/wpcs": "^1.0.0"
+        },
+        "require-dev": {
+            "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
+            "phpcompatibility/php-compatibility": "^9.0",
+            "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0",
+            "roave/security-advisories": "dev-master"
+        },
+        "suggest": {
+            "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3 || This Composer plugin will sort out the PHPCS 'installed_paths' automatically."
+        },
+        "time": "2018-10-31T17:02:38+00:00",
+        "type": "phpcodesniffer-standard",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Theme Review Team",
+                "homepage": "https://make.wordpress.org/themes/handbook/",
+                "role": "Strategy and rule setting"
+            },
+            {
+                "name": "Ulrich Pogson",
+                "homepage": "https://github.com/grappler",
+                "role": "Lead developer"
+            },
+            {
+                "name": "Juliette Reinders Folmer",
+                "homepage": "https://github.com/jrfnl",
+                "role": "Lead developer"
+            },
+            {
+                "name": "Denis Žoljom",
+                "homepage": "https://github.com/dingo-d",
+                "role": "Plugin integration lead"
+            },
+            {
+                "name": "Contributors",
+                "homepage": "https://github.com/WPTRT/WPThemeReview/graphs/contributors"
+            }
+        ],
+        "description": "PHP_CodeSniffer rules (sniffs) to verify theme compliance with the rules for theme hosting on wordpress.org",
+        "homepage": "https://make.wordpress.org/themes/handbook/review/",
+        "keywords": [
+            "phpcs",
+            "standards",
+            "themes",
             "wordpress"
         ]
     }
