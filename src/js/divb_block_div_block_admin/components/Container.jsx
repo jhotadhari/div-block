@@ -31,9 +31,6 @@ class Container extends Component {
 		return <>
 			<div
 				className={ setAttributes ? classNameEditor : 'divb ' + className }
-				style={ setAttributes && {
-					border: '1px dotted rgba( 0, 0, 0, 0.2)',
-				} }
 			>
 				{ setAttributes &&
 					<InnerBlocks

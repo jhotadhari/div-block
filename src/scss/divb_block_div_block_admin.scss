@@ -36,7 +36,10 @@
     &-text {
         .components-base-control__field {
             margin: 0;
+            height: 100%;
             input {
+                width: auto;
+                height: 100%;
                 border: none;
                 border-radius: 0;
             }

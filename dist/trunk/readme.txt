@@ -38,6 +38,12 @@ Upload and install this Theme the same way you'd install any other Theme.
 
 == Changelog ==
 
+## 0.1.11 - 2020-02-03
+Fixed admin style
+
+### Fixed
+- admin style
+
 ## 0.1.10 - 2020-01-23
 Dependency update
 
