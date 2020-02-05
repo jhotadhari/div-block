@@ -1,3 +1,12 @@
 {
-  "changes": []
+  "changes": [
+    {
+      "type": "added",
+      "message": "Support Block wide and full alignments. But styling has do be done by theme."
+    },
+    {
+      "type": "fixed",
+      "message": "Editor filter `editor.BlockListBlock` should only affect current div-block"
+    }
+  ]
 }
