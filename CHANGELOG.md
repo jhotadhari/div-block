@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.1.12 - 2020-04-12
+Update dependencies
+
+### Added
+- Support Block wide and full alignments. But styling has do be done by theme.
+
+### Changed
+- Updated to generator-wp-dev-env#0.14.1 ( wp-dev-env-grunt#0.9.6 wp-dev-env-frame#0.8.0 )
+
+### Fixed
+- Editor filter `editor.BlockListBlock` should only affect current div-block
+
 ## 0.1.11 - 2020-02-03
 Fixed admin style
 
