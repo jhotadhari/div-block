@@ -2,7 +2,7 @@
   "changes": [
     {
       "type": "changed",
-      "message": "Updated to generator-wp-dev-env#0.10.9 ( wp-dev-env-grunt#0.8.8 wp-dev-env-frame#0.7.6 )"
+      "message": "Updated to generator-wp-dev-env#0.14.1 ( wp-dev-env-grunt#0.9.6 wp-dev-env-frame#0.8.0 )"
     }
   ]
 }
