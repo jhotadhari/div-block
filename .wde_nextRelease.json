@@ -7,6 +7,9 @@
     {
       "type": "fixed",
       "message": "Editor filter `editor.BlockListBlock` should only affect current div-block"
+    },
+      "type": "changed",
+      "message": "Updated to generator-wp-dev-env#0.14.1 ( wp-dev-env-grunt#0.9.6 wp-dev-env-frame#0.8.0 )"
     }
   ]
 }

@@ -2,8 +2,7 @@
 /**
  * Div Block Plugin init
  *
- * @package WordPress
- * @subpackage div-block
+ * @package div-block
  */
 
 // If this file is called directly, abort.
