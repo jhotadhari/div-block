@@ -130,20 +130,20 @@
     },
     {
         "name": "croox/wp-dev-env-frame",
-        "version": "0.8.0",
-        "version_normalized": "0.8.0.0",
+        "version": "0.9.0",
+        "version_normalized": "0.9.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/croox/wp-dev-env-frame.git",
-            "reference": "99dbf7e246220114482aa1f0e589f72902651678"
+            "reference": "09434ef541fc4df30c5a8abcb88853a7583cff34"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/croox/wp-dev-env-frame/zipball/99dbf7e246220114482aa1f0e589f72902651678",
-            "reference": "99dbf7e246220114482aa1f0e589f72902651678",
+            "url": "https://api.github.com/repos/croox/wp-dev-env-frame/zipball/09434ef541fc4df30c5a8abcb88853a7583cff34",
+            "reference": "09434ef541fc4df30c5a8abcb88853a7583cff34",
             "shasum": ""
         },
-        "time": "2020-04-11T07:11:39+00:00",
+        "time": "2020-07-17T12:47:23+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -163,7 +163,7 @@
         "description": "some frame for wp-dev-env",
         "homepage": "https://github.com/croox/wp-dev-env-frame",
         "support": {
-            "source": "https://github.com/croox/wp-dev-env-frame/tree/0.8.0",
+            "source": "https://github.com/croox/wp-dev-env-frame/tree/master",
             "issues": "https://github.com/croox/wp-dev-env-frame/issues"
         }
     },
@@ -403,17 +403,17 @@
     },
     {
         "name": "squizlabs/php_codesniffer",
-        "version": "3.5.4",
-        "version_normalized": "3.5.4.0",
+        "version": "3.5.5",
+        "version_normalized": "3.5.5.0",
         "source": {
             "type": "git",
             "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-            "reference": "dceec07328401de6211037abbb18bda423677e26"
+            "reference": "73e2e7f57d958e7228fce50dc0c61f58f017f9f6"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/dceec07328401de6211037abbb18bda423677e26",
-            "reference": "dceec07328401de6211037abbb18bda423677e26",
+            "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/73e2e7f57d958e7228fce50dc0c61f58f017f9f6",
+            "reference": "73e2e7f57d958e7228fce50dc0c61f58f017f9f6",
             "shasum": ""
         },
         "require": {
@@ -425,7 +425,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
         },
-        "time": "2020-01-30T22:20:29+00:00",
+        "time": "2020-04-17T01:09:41+00:00",
         "bin": [
             "bin/phpcs",
             "bin/phpcbf"
@@ -505,12 +505,12 @@
         "version_normalized": "0.1.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/WPTRT/WPThemeReview.git",
+            "url": "https://github.com/WPTT/WPThemeReview.git",
             "reference": "d9fa0dfff3e842efa9d7f804c9ec241408fd3c19"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/WPTRT/WPThemeReview/zipball/d9fa0dfff3e842efa9d7f804c9ec241408fd3c19",
+            "url": "https://api.github.com/repos/WPTT/WPThemeReview/zipball/d9fa0dfff3e842efa9d7f804c9ec241408fd3c19",
             "reference": "d9fa0dfff3e842efa9d7f804c9ec241408fd3c19",
             "shasum": ""
         },
